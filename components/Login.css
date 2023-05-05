@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Sora:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .imageBox{
+    
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imagebox img:nth-child(1){
+    position: absolute;
+}
+section .imagebox img:nth-child(4){
+    position: absolute;
+}
+
+section .imageBox .eclipse2{
+    position: absolute;
+    margin-bottom: 6rem;
+}
+
+section .imageBox .design{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentBox {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+section .contentBox .form-box{
+    width: 50%;
+}
+
+section .contentBox .form-box h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    
+    color: #2C3341;
+}
+section .contentBox .form-box p{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;    
+    width: 100%;
+    text-align: center;
+    
+    color: #92959D;
+}
+
+section .contentBox .form-box .form-group{
+    margin-bottom: 28px;
+    /* width: 310px; */
+    width: 100%;
+    height: 54px;
+    background: #F7F7F7;
+    border-radius: 15px;
+}
+section .contentBox .form-box .form-group input{
+    border: none;
+    /* width: 270px; */
+    width: 100%;
+    outline: none;
+    height: 10px;
+    background: #F7F7F7;
+    border-radius: 15px;
+    position: relative;
+    bottom: .5rem;
+    text-indent: 0.5rem;
+}
+section .contentBox .form-box .form-group p{
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;    
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    color: #92959D;
+    position: relative;
+    top: 0.5rem;
+}
+section .contentBox .form-box .form-group img{
+    position: relative;
+    left: 22rem;
+    bottom: 2rem;
+}
+
+section .contentBox .form-box .button input{
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 54px;
+    outline: none;
+    border: none;
+    background: #0062CF;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+section .contentBox .form-box .button p a{
+    margin: 2rem 0;
+    width: 100%;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    
+    color: #0062CF;
+}
+section .contentBox .form-box .logo-box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+section .contentBox .form-box .create-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .contentBox .form-box .create-box p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    
+    
+    color: #92959D;
+}
+section .contentBox .form-box .create-box p a{
+    color: #0062CF;
+    font-weight: 600;
+}
+
+@media (max-width : 768px){
+    section{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 4rem;
+    }   
+    section .imageBox{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentBox {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    section .contentBox .form-box{
+        padding: 4rem;
+        width: 100%;
+        margin-top: -2rem;
+    }
+    section .imageBox .ball{
+        position: absolute;
+        top: 0;
+    }
+}

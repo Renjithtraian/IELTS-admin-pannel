@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Sora:wght@500&display=swap');
+:root{
+    --primary-color : #0062CF;
+    --bg-color : #F6F6F6;
+    --border-radius : 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+}
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: 'Sora', sans-serif;
+    background-color: var(--bg-color);
+    /* overflow: hidden; */
+}
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container{
+    /* background-color: red; */
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 18rem auto;
+}
+
+/*<--------- side design starting ---------->*/
+
+aside{
+    height: 100vh;
+    background-color: #fff;
+    padding: .4rem;
+}
+aside .top{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo img{
+    margin-left: 1.9rem;
+    width: 167px;
+    height: 65px;
+}
+aside .mini-logo{
+    display: none;
+}
+
+aside .sidebar{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0.7rem;
+}
+aside h3{
+    font-weight: 500;
+    font-size: 22px;
+}
+aside .sidebar a{
+    border-radius: var(--border-radius);
+    padding: .2rem;
+    display: flex;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin: 2px .1rem;
+    align-items: center;
+    position: relative;
+    height: 3rem;
+    gap: 0.5rem;
+}
+aside .sidebar a h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    
+    color: #2C3341;
+}
+aside .sidebar .bottom-sec .img-b{
+    display: flex;
+    padding: 0.3rem;
+    margin-left: .1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+aside .sidebar .bottom-sec .img-b h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    
+    color: #2C3341;
+}
+aside .sidebar .bottom-sec .button{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    
+    color: #FFFFFF;
+}
+aside .sidebar .bottom-sec{
+    border-radius: var(--border-radius);
+    padding: 0.2rem;
+    width: 100%;
+    display: flex;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: 24rem;
+}
+aside .sidebar .bottom-sec .button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .sidebar a.active{
+    margin-left: 0;
+}
+aside .sidebar a.active h3{
+    color: #fff;
+}
+
+aside .sidebar a.active::before{
+    margin-left: -0.7rem;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+aside .sidebar a.not-active{
+    background-color: var(--bg-color);
+    color: #2C3341;
+}
+
+/*<--------- side design ending ---------->*/
+
+/* body section starting */
+
+main{
+    padding: 1rem;
+}
+main h3{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    
+    color: #4E545F;
+}
+main h2{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    
+    color: #2C3341;
+    
+    line-height: 2rem;
+}
+main .filtered{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+}
+main .filtered p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    
+    color: #2C3341;
+}
+main .filtered .form-group form input{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    
+    color: #585858;
+    text-indent: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 246px;
+    height: 40px;
+    /* border: 1px solid grey; */
+}
+main .filtered .status select{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 20px; */
+    display: flex;
+    align-items: center;
+    
+    color: #2C3341;
+    width: 100px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+main .main-section{
+    background: #FFFFFF;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+}
+
+main .main-table{
+    border-radius: var(--border-radius);
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main-table .reset-btn{
+    gap: .8rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2C3341;
+    border-radius: 5px;
+}
+main .main-table .reset-btn img{
+    height: 50%;
+    width: 22px;
+}
+main .main-table .reset-btn h3{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+main .main-table .right-section{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+main .main-table .right-section h3{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
+
+main .main-table .right-section select{
+    padding: 1rem;
+    height: 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+main .main-section .main-table-details{
+    margin-top: .6rem;
+}
+
+main .main-section .main-table-details table{
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+main .main-section .main-table-details table,th,td{
+    padding: .8rem;
+}
+main .main-section .main-table-details table thead th{
+    border-bottom: 3px solid #F7F7F7;;
+    height: 2.5rem;
+}
+main .main-section .main-table-details table thead tr th{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    
+    color: #000000;
+}
+
+main .main-section .main-table-details table tbody td{
+   
+    height: 3.5rem;
+    border-bottom: 1px solid #F7F7F7;
+}
+main .main-section .main-table-details table tbody td span{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+main .main-section .main-table-details table tbody tr td:nth-child(2){
+    display: flex;
+    margin-top: 5px;
+}
+
+main .main-section .main-table-details table tbody tr td .nn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -11px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        vertical-align: middle;
+        margin-left: 9rem;
+        color: #FFFFFF;
+}
+main .main-section .main-table-details table tbody tr  td h5{
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;    
+    
+    color: #000000;
+}
+main .main-section .main-table-details table tbody tr td span{
+    position: relative;
+    left: -120px;
+    top: 8px;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 14px;
+    color: #4E545F;
+}
+main .main-section .main-table-details table tbody tr td{
+    gap: 10px;
+}
+main .main-section .main-table-details table tbody tr td a{
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+   
+    
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    padding: .5rem;
+    border-radius: var(--border-radius);
+    color: #FFFFFF;
+    border: 1px solid white;
+    border: none;
+}
+main .main-section .main-table-details table tbody tr td .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: .6rem;
+    border-radius: var(--border-radius);
+}
+main .main-section .main-table-details table tbody tr td h6{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    
+    color: #2C3341;
+    
+}
+main .main-section .main-table-details .navigate {
+    display: flex;
+    justify-content: space-between;
+}
+main .main-section .main-table-details .navigate h1{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    
+    color: #000000;
+}
+
+main .main-section .main-table-details .navigate .navigate-left-side{
+    display: flex;
+    padding: .5rem;
+    width: 134px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+main .main-section .main-table-details .navigate .navigate-right-side{
+    display: flex;
+    width: 134px;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
